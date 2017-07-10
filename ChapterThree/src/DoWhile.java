@@ -15,7 +15,7 @@ public class DoWhile {
 		}
 		
 		System.out.println("second while loop");
-		countDown = 0;
+		countDown = 10;
 		while(countDown > 0)
 		{
 			System.out.println("Hello");
