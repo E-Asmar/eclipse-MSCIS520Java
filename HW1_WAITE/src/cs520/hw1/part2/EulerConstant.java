@@ -1,3 +1,7 @@
+/*Author: Patrick Waite
+ *Description: METCS 520 O1 -- Assignment 1, Part 2
+ *program to solve for e given variable n.*/
+
 package cs520.hw1.part2;
 
 public class EulerConstant {

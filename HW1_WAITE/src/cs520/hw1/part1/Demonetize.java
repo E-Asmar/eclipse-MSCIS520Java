@@ -5,14 +5,12 @@
 package cs520.hw1.part1;
 
 //imports to get keyboard scanner for user imputs
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class Demonetize {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//create new scanner object
 				
 		//set variables and data type
 		int thousands,
@@ -30,35 +28,35 @@ public class Demonetize {
 	
 		input1 = JOptionPane.showInputDialog("Please enter the number of old 1000 demoniation notes you wish to exchange:");
 		thousands = Integer.parseInt(input1);
-				
-		//String thousands = Integer.toString(input1);
 		
 		//requests # of 500 demonomition bills
 				
 		input2 = JOptionPane.showInputDialog("Please enter the number of old 1000 demoniation notes you wish to exchange:");
 		fiveHundreds = Integer.parseInt(input2);
-		
-		//String fiveHundreds = Integer.toString(input2);
-		
+	
 		//test input/output
 		System.out.println("Entered # of thousand demominations: " + input1 + " totalling out to: " + (thousands * 1000));
 		System.out.println("Entered # of five hundred denominaiton: " + input2 + " totalling out to: " + (fiveHundreds * 500));
 		System.out.println();
 		
+		//calculations
 		input3 = ((thousands*1000)+(fiveHundreds*500));
 		
+		//more console output
 		System.out.println("Total amount to be Exchanged: " + input3);
 		System.out.println();
 		
+		//calculations
 		newTwoThousand = (input3/2000);
 		remainderInFive = (input3%2000);
 		newFiveHundred = (remainderInFive/500);
-				
+		
+		//more console output
 		System.out.println("After new two thousand notes, " + remainderInFive + " remaining");
 		System.out.println();
 		
 		System.out.println("Number of New Two Thousand Notes: " + newTwoThousand);
-		//System.out.println(remainderInFive);
+
 		System.out.println("Number of New Five Hundred Notes:  " + newFiveHundred);
 		
 		//results panel
