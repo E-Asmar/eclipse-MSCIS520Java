@@ -5,22 +5,13 @@ public class math {
 	{
 		double e = 1.0;
 		int factor = 1;
-		double xl = 0.0;
 		
 		System.out.println("\nComputing with n = " + n);
 		
 		//System.out.printf("\n\ne is approx. : ", e);
         
         for (int i = 1; i <= n; i++)
-         {
-        	//e = 1.0;
-        	
-        	/*for(int x = 1; x <= n; x++) {
-				
-        		xl =+ (double)x;
-        	}*/
-
-           
+         {        	
             factor = i * factor;
             e = e + (1.0 / factor);//1.0 / (double)i;
             System.out.printf("\nFactorial of %d is %d                e = %f", i, factor, e);
