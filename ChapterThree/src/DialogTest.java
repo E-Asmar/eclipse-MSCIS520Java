@@ -3,7 +3,6 @@ import javax.swing.JOptionPane;
 public class DialogTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		//JOptionPane.showMessageDialog(null, "get wrecked i am a truck fuckers");
 		//String input1 = JOptionPane.showInputDialog("enter me fucksticks");
 		//System.out.println(input1);
