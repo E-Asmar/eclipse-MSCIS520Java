@@ -1,10 +1,9 @@
 /*
  * 
  */
-package cs520.hw2.part1;
+package cs520.hw3.part1;
 
 import javax.swing.JOptionPane;
-import java.util.StringTokenizer;
 
 public class StringTest {
 
@@ -24,16 +23,10 @@ public class StringTest {
 		try {
 		
 			input = JOptionPane.showInputDialog("Please enter data using format Name,Age,City");
-			//String delimiter = ",";
-			//StringTokenizer st = new StringTokenizer(input, delimiter);
 			
 			// its not pretty but its removes the spaces on either side of the comma and on the front and back 
 			inputTrimmed = input.trim().replace(", ", ",");
 			inputTrimmed = inputTrimmed.replace(" ,", ",");
-			
-			//creates useable string array and splits on comma
-			String[] inputSplit = inputTrimmed.split(",");
-			
 				
 			//Position of words,
 			pos1 = inputTrimmed.indexOf(',');
