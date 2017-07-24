@@ -12,7 +12,9 @@ public class Senator {
 					state;
 	private int yearsInOffice;
 	
+	//no arg constutor to sataify java req.
 	public Senator() {}
+	//single arg name construtor used to build each entry.
 	public Senator(String name) {
 		this.name = name;
 		this.getParty();
@@ -20,11 +22,13 @@ public class Senator {
 		this.getYearsInOffice();
 	}
 	
+	//override the toString() class to output each line of data
 	@Override
 	public String toString() {
 		return getName() + " (" + getParty() + ") from " + getState()
 				+ " has been the senator for " + getYearsInOffice() + " years";
 	}
+	//getters and setters
 	public String getName() {
 		return name;
 	}
@@ -47,11 +51,11 @@ public class Senator {
 		return yearsInOffice;
 	}
 	public void setYearsInOffice(String years) {
+		//if value of years is not an integer and can not be parsed it is set to -99
 		try {
 			this.yearsInOffice = Integer.parseInt(years);
 		}catch(NumberFormatException e) {
 			this.yearsInOffice = -99;
 		}		
 	}
-
 }

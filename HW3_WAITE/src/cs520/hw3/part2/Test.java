@@ -18,19 +18,21 @@ public class Test {
 		// TODO Auto-generated method stub
 		String inputFileName = "data.txt";
 		FileReader fileReader = null;
+		//creates the fileReader needed for bufferReader to work
 		try {
 			fileReader = new FileReader(inputFileName);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		
+
+		//stripping out the data line by line 
 		BufferedReader reader = new BufferedReader(fileReader);
 		String input;
 		try {
 			input = reader.readLine();
 			while (input!=null) {
 				processInputData(input);
-				input = reader.readLine(); //.replace(", ", ",").replace(" ,", ",") .trim();
+				input = reader.readLine();
 			}
 		}catch (IOException e) {
 			e.printStackTrace();
@@ -42,6 +44,7 @@ public class Test {
 		{
 			System.out.println("please enter a valid input");
 		}
+		//closes the fileReader once the bufferReader has finished its opooration. 
 		try {
 			fileReader.close();
 		}catch (IOException e) {
@@ -49,6 +52,8 @@ public class Test {
 		}
 		
 	}
+	
+	//pulling the data via string tokenizer 
 	private static void processInputData(String data)
 	{
 		
