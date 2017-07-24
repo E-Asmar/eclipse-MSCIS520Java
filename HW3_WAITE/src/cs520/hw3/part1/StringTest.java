@@ -1,5 +1,6 @@
-/*
- * 
+/*Author: Patrick Waite
+ * Description: Homework 3 
+ * Class METCS 520 
  */
 package cs520.hw3.part1;
 
