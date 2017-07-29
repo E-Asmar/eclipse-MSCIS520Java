@@ -28,6 +28,9 @@ public class Cups1 extends JFrame {
 	
 	//viewport (paint method)
 	public void paint(Graphics g) {
+		/*for(int i = 0; i <= baseLenght; i++) {
+			for 
+		}*/
 		
 	}
 	
