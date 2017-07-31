@@ -45,8 +45,8 @@ public class Cups2 extends JFrame {
 	}
 	//creates each cup image in the row as a 'column'
 	for(int col = 0; col < row; col++) {
-		int xpoints[] = {0, 100, 50, 150, 10};
-	    int ypoints[] = {10, 40, 50, 100, 150};
+		int xpoints[] = { (workingX+5), workingX, (workingX+cupWidth), (workingX+cupWidth-5), workingX};
+	    int ypoints[] = {workingY, (workingY+cupHeight), (workingY+cupHeight),   workingY, workingY};
 	    int npoints = 5;
 		
 	    g.fillPolygon(xpoints, ypoints, npoints);
