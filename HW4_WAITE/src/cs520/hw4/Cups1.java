@@ -1,5 +1,6 @@
 package cs520.hw4;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.JFrame;
@@ -31,7 +32,18 @@ public class Cups1 extends JFrame {
 		/*for(int i = 0; i <= baseLenght; i++) {
 			for 
 		}*/
+		int size = 10;
+		int [][] triangle = new int[size][];
 		
+		for(int row = 0; row < size; row++) {
+			triangle[row] = new int[row+1];
+			for(int col = 0; col < triangle[row].length; col++)
+			{
+				g.setColor(Color.blue);
+				g.fillRect(startX, startY, cupWidth, cupHeight);
+				triangle[row][col] = col + 1;
+			}
+		}
 	}
 	
 	//main method
