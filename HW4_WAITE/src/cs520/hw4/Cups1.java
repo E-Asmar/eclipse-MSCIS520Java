@@ -8,6 +8,10 @@ import javax.swing.JFrame;
 public class Cups1 extends JFrame {
 	private int startX, 	//left most point
 				startY, 	//top most point
+	private int startX,		//left most point
+				workingX,	//to help with placement of cups in stack
+				startY,		//top most point
+				workingY,	//to help with placement of cups in stack
 				cupWidth,	//width of cup
 				cupHeight,	//height of cup
 				baseLength, //number of cups on bottom row
@@ -29,6 +33,7 @@ public class Cups1 extends JFrame {
 	
 	//viewport (paint method)
 	public void paint(Graphics g) {
+<<<<<<< HEAD
 		/*for(int i = 0; i <= baseLenght; i++) {
 			for 
 		}*/
@@ -43,12 +48,42 @@ public class Cups1 extends JFrame {
 				g.fillRect(startX, startY, cupWidth, cupHeight);
 				triangle[row][col] = col + 1;
 			}
+=======
+		//working x and y to keep start x and y separate this will become important when placing new rows on the pyramid 
+		workingX = startX; 
+		workingY = startY;
+		
+		//first for loop or rows
+		for (int row = baseLength; row >= 1; row--) {
+			//setting the color of the cups to alternating rows
+			if(row%2 == 1) {
+				g.setColor(Color.red);
+			}else {
+				g.setColor(Color.blue);
+			}
+			//creates each cup image in the row as a 'column'
+			for(int col = 0; col < row; col++) {
+				
+				g.fillRect(workingX, workingY, cupWidth, cupHeight);
+				//sets the x value for the next cup to be added
+				workingX = workingX + cupWidth + cupSpaceing;
+				
+			}
+			//sets the y value for the next row
+			workingY = workingY - cupHeight;
+			//sets the offset for the row to make the pyramid shape
+			startX = startX + ((cupWidth + cupSpaceing)/2);
+			//sets workingX to the new startX value for the pattern
+			workingX = startX;
+			//g.setColor(Color.red);
+>>>>>>> 0422868097e5610b4a5a46663a44ef8f0942b589
 		}
 	}
 	
 	//main method
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//sets width and height of JFrame
 		int width = 550;
 		int height = 550;
 		
