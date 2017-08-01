@@ -6,8 +6,6 @@ import java.awt.Graphics;
 import javax.swing.JFrame;
 
 public class Cups1 extends JFrame {
-	private int startX, 	//left most point
-				startY, 	//top most point
 	private int startX,		//left most point
 				workingX,	//to help with placement of cups in stack
 				startY,		//top most point
