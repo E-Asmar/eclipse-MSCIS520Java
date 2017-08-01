@@ -1,3 +1,8 @@
+/* Author: Patrick Waite
+ * Discription: homework assignment 4
+ * cupstacking 
+ */
+
 package cs520.hw4;
 
 import java.awt.Color;
