@@ -1,0 +1,6 @@
+Al Franken,8,Democrat,Minnesota
+Amy Klobuchar,10,Democrat,Minnesota
+Angus King,4,Independent,Maine
+Ben Cardin,10,Demoncrat,Maryland
+Ben Sasse,2,Republican,Nebraska
+Bernie Sanders,10,Independent,Vermont
