@@ -1,3 +1,9 @@
+/*Author: Patrick Waite
+ * Description : homework # 5 for METCS520
+ * info: working with Hashmaps and linked lists
+ * 
+*/
+
 package cs520.hw5;
 
 public class Senator {
@@ -5,6 +11,7 @@ public class Senator {
 	private String 	name,
 					party,
 					state;
+					//yearsInOffice;
 	private int yearsInOffice;
 	
 	//single arg name construtor used to build each entry.
@@ -46,6 +53,7 @@ public class Senator {
 	public void setYearsInOffice(String years) {
 		//if value of years is not an integer and can not be parsed it is set to -99
 		try {
+			//this.yearsInOffice = years;
 			this.yearsInOffice = Integer.parseInt(years);
 		}catch(NumberFormatException e) {
 			this.yearsInOffice = -99;
