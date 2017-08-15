@@ -1,4 +1,4 @@
-package cs520.hw6.part1;
+package cs520.hw6.part2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,32 +38,32 @@ public class Test {
 		SharedResults shared = new SharedResults();
 		
 		Thread[] threads = new Thread[] {
-				new LongTask(shared, buffer, 'a'),
-				new LongTask(shared, buffer, 'b'),
-				new LongTask(shared, buffer, 'c'),
-				new LongTask(shared, buffer, 'd'),
-				new LongTask(shared, buffer, 'e'),
-				new LongTask(shared, buffer, 'f'),
-				new LongTask(shared, buffer, 'g'),
-				new LongTask(shared, buffer, 'h'),
-				new LongTask(shared, buffer, 'i'),
-				new LongTask(shared, buffer, 'j'),
-				new LongTask(shared, buffer, 'k'),
-				new LongTask(shared, buffer, 'l'),
-				new LongTask(shared, buffer, 'm'),
-				new LongTask(shared, buffer, 'n'),
-				new LongTask(shared, buffer, 'o'),
-				new LongTask(shared, buffer, 'p'),
-				new LongTask(shared, buffer, 'q'),
-				new LongTask(shared, buffer, 'r'),
-				new LongTask(shared, buffer, 's'),
-				new LongTask(shared, buffer, 't'),
-				new LongTask(shared, buffer, 'u'),
-				new LongTask(shared, buffer, 'v'),
-				new LongTask(shared, buffer, 'w'),
-				new LongTask(shared, buffer, 'x'),
-				new LongTask(shared, buffer, 'y'),
-				new LongTask(shared, buffer, 'z')};
+				new LongTask(0, shared, buffer, 'a'),
+				new LongTask(1, shared, buffer, 'b'),
+				new LongTask(2, shared, buffer, 'c'),
+				new LongTask(3, shared, buffer, 'd'),
+				new LongTask(4, shared, buffer, 'e'),
+				new LongTask(5, shared, buffer, 'f'),
+				new LongTask(6, shared, buffer, 'g'),
+				new LongTask(7, shared, buffer, 'h'),
+				new LongTask(8, shared, buffer, 'i'),
+				new LongTask(9, shared, buffer, 'j'),
+				new LongTask(10, shared, buffer, 'k'),
+				new LongTask(11, shared, buffer, 'l'),
+				new LongTask(12, shared, buffer, 'm'),
+				new LongTask(13, shared, buffer, 'n'),
+				new LongTask(14, shared, buffer, 'o'),
+				new LongTask(15, shared, buffer, 'p'),
+				new LongTask(16, shared, buffer, 'q'),
+				new LongTask(17, shared, buffer, 'r'),
+				new LongTask(18, shared, buffer, 's'),
+				new LongTask(19, shared, buffer, 't'),
+				new LongTask(20, shared, buffer, 'u'),
+				new LongTask(21, shared, buffer, 'v'),
+				new LongTask(22, shared, buffer, 'w'),
+				new LongTask(23, shared, buffer, 'x'),
+				new LongTask(24, shared, buffer, 'y'),
+				new LongTask(25, shared, buffer, 'z')};
 		for(int i = 0; i < threads.length; i++) {
 			threads[i].start();
 		}

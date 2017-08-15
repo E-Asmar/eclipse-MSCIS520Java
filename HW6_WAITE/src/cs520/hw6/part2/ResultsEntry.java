@@ -1,4 +1,4 @@
-package cs520.hw6.part1;
+package cs520.hw6.part2;
 
 public class ResultsEntry {
 	private int count;

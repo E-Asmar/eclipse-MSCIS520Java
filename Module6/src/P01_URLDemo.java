@@ -3,6 +3,7 @@ import java.io.*;
 import javax.swing.*;
 
 public class P01_URLDemo {
+	
 	public static void main(String[] args) {
 		String page = "http://norvig.com/big.txt";
 		URL urlObject = null;
@@ -34,7 +35,7 @@ public class P01_URLDemo {
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
-		JFrame frame = new JFrame(page);
+		/*JFrame frame = new JFrame(page);
 		JTextArea ta = new JTextArea(buffer.toString());
 		ta.setVisible(true);
 		JScrollPane sp = new JScrollPane(ta);
@@ -42,7 +43,23 @@ public class P01_URLDemo {
 		frame.getContentPane().add(sp);
 		frame.setSize(400, 400);
 		frame.setVisible(true);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);*/
 		//System.out.print(buffer.toString());
+		char a = 'a';
+		countOccurance(buffer, a);
+		System.out.println(count);
+	}
+	public static int countOccurance(StringBuffer sb, char ch) {
+		int count = 0;
+		for (int i = 0; i < sb.length(); i++)
+		{
+			if(sb.charAt(i) == ch)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 }
+
+
